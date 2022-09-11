@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edyoda Landing Page | by Deva😎</title>
+    <script
+      src="https://kit.fontawesome.com/806bb3d9b4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #e5dfdf;
+      overflow-x: hidden;
+    }
+    .mainHeader {
+      background-color: #fff;
+      border-bottom: 2px solid rgb(185, 183, 183);
+      padding: 16px 78px;
+      position: fixed;
+      z-index: 5;
+      width: 100%;
+    }
+    .header {
+      display: flex;
+      /* padding: 16px 78px; */
+    }
+    .edyoda {
+      width: 130px;
+      font-size: 32px;
+      color: #0084ff;
+      font-weight: 800;
+      font-family: "Raleway", sans-serif;
+    }
+    .stories {
+      margin: 0;
+      font-weight: 500;
+      font-size: 18px;
+      font-family: "Raleway", sans-serif;
+    }
+    .explore {
+      margin-left: 82px;
+      margin-top: 18px;
+      font-family: "Raleway", sans-serif;
+    }
+    .explore:hover {
+      cursor: pointer;
+    }
+    .sec1 {
+      display: flex;
+      justify-content: space-between;
+    }
+    .sec11 {
+      width: 100%;
+    }
+    .sec12 {
+      width: 100%;
+    }
+    .sec11 img {
+      /* width: 100%; */
+      margin-top: 14px;
+      height: 450px;
+    }
+    .container {
+      width: 68%;
+      padding-top: 110px;
+    }
+    .img1 img {
+      width: 90%;
+      margin-top: 14px;
+      margin-left: 12px;
+      height: 198px;
+    }
+    .items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .active {
+      padding: 5px 14px;
+      color: white;
+      background-color: #0084ff;
+      width: auto;
+      border-radius: 15px;
+      margin: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .content {
+      padding: 5px 14px;
+      color: #0084ff;
+      background-color: #dfdbdb;
+      width: auto;
+      border: 1px solid #0084ff;
+      border-radius: 15px;
+      margin: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .itemContent {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-bottom: 14px;
+    }
+    .card-text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.43;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 4px 0;
+    }
+    .card {
+        border-radius: 5px;
+    }
+    footer {
+        background-color: #172146;
+        width: 100%;
+        /* height: 90px; */
+        padding: 80px 60%;
+    }
+  </style>
+  <body>
+    <div class="mainHeader">
+      <div class="header">
+        <div class="logo">
+          <div class="edyoda">EDYODA</div>
+          <div><i class="stories">Stories</i></div>
+        </div>
+        <div class="explore">
+          Explore Categories
+          <i style="padding-left: 8px" class="fas fa-chevron-circle-down"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div style="color: #000; font-weight: 600; margin: 0; font-size: 42px">
+        Trending Posts
+      </div>
+      <div class="sec1">
+        <div class="sec11">
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/ace-soft-skills-small.jpg"
+            alt="trend"
+          />
+        </div>
+        <div class="sec12">
+          <div class="img1">
+            <img
+              src="https://edyoda.s3.amazonaws.com/media/blog-images/aptitude-small.jpg"
+              alt="img1"
+            />
+          </div>
+          <div class="img1">
+            <img
+              src="https://edyoda.s3.amazonaws.com/media/blog-images/learn_cloud_computing.jpeg"
+              alt="img2"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        style="color: #000; font-weight: 600; font-size: 32px; margin-top: 18px"
+      >
+        Latest Posts
+      </div>
+      <div>
+        <i style="color: #0084ff; margin-top: 18px" class="fas fa-filter"></i>
+        <p
+          style="
+            padding-left: 8px;
+            display: inline;
+            font-size: 16px;
+            font-weight: 600;
+          "
+        >
+          Filter by category
+        </p>
+      </div>
+      <div class="items">
+        <div class="active">All</div>
+        <div class="content">Artificial Intelligence</div>
+        <div class="content">Cloud Computing</div>
+        <div class="content">DevOps</div>
+        <div class="content">Programming Languages</div>
+        <div class="content">Mobile Application Development</div>
+        <div class="content">Technology and Tools</div>
+        <div class="content">Get a Job in a Tech Company</div>
+        <div class="content">Others</div>
+      </div>
+      <div class="itemContent">
+        <div class="card" style="width: 32%; margin-bottom: 14px">
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/7_reasons_to_learn_Python_u3lFION.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              Fresh Graduate or IT professional Looking for a...
+            </h5>
+            <div>
+              <span style="color: #0084ff; font-style: italic">Arman Ahmed</span
+              ><span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+              >
+                | 05 Jul 2019</span
+              >
+            </div>
+            <p class="card-text">
+              If you are a fresh graduate - or new to IT - looking for the next
+              job, you need to read this. The last couple of years zekeLabs gave
+              me a unique opportunity to assess technology...
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 32%; margin-bottom: 14px">
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/edyoda_WxvDSK1.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              Introducing you all to EdYoda - www.edyoda.com
+            </h5>
+            <div>
+              <span style="color: #0084ff; font-style: italic">Arman Ahmed</span
+              ><span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+              >
+                | 05 Jul 2019</span
+              >
+            </div>
+            <p class="card-text">
+              Really ecstatic and immensely proud to introduce you all to our
+              latest attempt of adding value and making an impact to the world
+              we are a part of....
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 32%; margin-bottom: 14px">
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/devops-edYoda-blog-small.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              From identity crisis to the Success Story - The...
+            </h5>
+            <div>
+              <span style="color: #0084ff; font-style: italic"
+                >Kalyan Mahalingam</span
+              ><span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+              >
+                | 05 Jul 2019</span
+              >
+            </div>
+            <p class="card-text">
+              DevOps is a paradigm shift in the way how software products are
+              being built in the modern day Information Technology (IT)
+              organizations.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 32%; margin-bottom: 14px">
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/Data_Scientist_1920_1280_DsZBGZu.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              Typical day of Data Scientist - An insider story!
+            </h5>
+            <div>
+              <span style="color: #0084ff; font-style: italic">Saurav Ghos</span
+              ><span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+              >
+                | 05 Jul 2019</span
+              >
+            </div>
+            <p class="card-text">
+              I’ve been a Data Scientist for three years now and I can only say
+              that Chris Lynch was right - “ Big Data and Data Science are the
+              foundation of all the trends that are emerging i...
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 32%; margin-bottom: 14px">
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/edyoda_blog_aws_cloudday_17may2018_Bangalore_small_ByulIE.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              Amazon Web Services (AWS) Cloud Day - ...
+            </h5>
+            <div>
+              <span style="color: #0084ff; font-style: italic"
+                >Kalyan Mahalingam</span
+              ><span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+              >
+                | 05 Jul 2019</span
+              >
+            </div>
+            <p class="card-text">
+              It was indeed a hectic day with back to back session sandwiched by
+              good food and tea (on a lighter note, need to investigate the
+              tactics behind the 5-star hotels keeping the plates so...
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 32%; margin-bottom: 14px">
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/cloud-meetup-edyoda-small_b2EXhBe.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">edYoda Meetup #01 : A Date with Cloud</h5>
+            <div>
+              <span style="color: #0084ff; font-style: italic"
+                >Ashish Pandey</span
+              ><span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+              >
+                | 05 Jul 2019</span
+              >
+            </div>
+            <p class="card-text">
+              I recently had the opportunity to lead the initiative to organize
+              the first Cloud meetup for edYoda. Here, I recount my experience
+              in organizing the very first in the serie...
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 32%; margin-bottom: 14px">
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/pitanjal-industry-4-image-1.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              Industry 4.0 - The Prospects & Journey ahead!
+            </h5>
+            <div>
+              <span style="color: #0084ff; font-style: italic"
+                >Pitanjal Dutta</span
+              ><span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+              >
+                | 05 Jul 2019</span
+              >
+            </div>
+            <p class="card-text">
+              Did you ever dream a world where computers are connected and will
+              communicate with one another to ultimately make decisions without
+              human involvement?
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 32%; margin-bottom: 14px">
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/Copy_of_aptitude_1920_1280_LVmu25g.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Why do Database Systems Exist?</h5>
+            <div>
+              <span style="color: #0084ff; font-style: italic"
+                >Pitanjal Dutta</span
+              ><span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+              >
+                | 05 Jul 2019</span
+              >
+            </div>
+            <p class="card-text">
+              Wondering why Database Management Systems like MySQL, NOSQL,
+              MSSQL, Oracle SQL, MongoDB form the fundamental blocks behind
+              working with Data?...
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 32%; margin-bottom: 14px">
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/aptitude-small.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              Master your General Aptitude Job Interview...
+            </h5>
+            <div>
+              <span style="color: #0084ff; font-style: italic"
+                >Pitanjal Dutta</span
+              ><span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+              >
+                | 05 Jul 2019</span
+              >
+            </div>
+            <p class="card-text">
+              A general aptitude becomes very important, when you apply for a
+              job in a tech company. You might be highly skilled in your subject
+              domain. However, these basic...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
